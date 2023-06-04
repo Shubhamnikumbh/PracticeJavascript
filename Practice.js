@@ -1,14 +1,16 @@
-    
 
-    var data =[20,30,45,87,78,45];
 
-    let max= data[0] ;
+ let arr =[1,2,3,4,5]
 
-    for (let i = 1; i < data.length; i++) {
+ let n=3;
 
-       if(data[i] > max) {
-      max=data[i]
+ function rotate (arrValue,num){
+    for (let index = 0; index < num; index++) {
+        let lastitem = arrValue.pop()
+        arrValue.unshift(lastitem)
+        console.log("result",arrValue)
     }
-    
-  }
-  console.log(max)
+ }
+
+ rotate(arr,n)
+  
