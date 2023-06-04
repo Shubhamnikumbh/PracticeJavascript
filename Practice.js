@@ -13,13 +13,20 @@
 //  }
 
 //  rotate(arr,n)
+  let arr =['aaa','bbb','ccc','aaa','bbb'];
 
-   var data ="Shubham" ;
-   var add="Shubha"
+  let obj ={};
 
-   if (data===add) {
-    console.log("Same")
+  for (let index = 0; index < arr.length; index++) {
+    
+   let item = arr[index] ;
+
+   if (obj[item]) {
+    obj[item]= obj[item] + 1 ;
    } else {
-    console.log("different")
+    obj[item]= 1 ;
    }
+    
+  }
 
+  console.log("result" ,obj)
